@@ -1,0 +1,104 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+.flag{
+    position: relative;
+    height: 100vh;
+}
+.drosh{
+    width: 500px;
+    height: 302px;
+    border:1px solid #000;
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.red{
+    height: 100px; 
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+    border-radius: 7px 7px 0 0;
+}
+.blue{
+    height: 100px; 
+    width: 100%;
+    background-color: blue;
+}
+.orange{
+    height: 100px; 
+    width: 100%;
+    background-color: #ff6a07;
+    border-radius: 0 0 7px 7px;
+}
+
+.image {
+    position: absolute;
+    top: 50%;
+    width: 500px;
+    height: 370px;
+    left: 50%;
+    transform: translate(-50%, -49%);
+    
+}
+.image img{
+    width: 100%;
+    height: 330px;
+
+ 
+}
+.image2 {
+ position: absolute;
+ top: 50%; 
+ left: 50%;
+ transform: translate(-50%, -50%);
+
+}
+.image2  img{
+    
+    width: 200px;
+    
+}
+
+.bg{
+    width: 500px;
+    height: 302px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+h2{
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Tourney', cursive;
+}
+.text{
+    height: 302px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
